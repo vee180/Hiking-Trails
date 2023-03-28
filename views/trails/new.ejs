@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+
+    <form id="new-form" action="/trails" method="POST">
+        <label for="title" class="form-label">Title:</label>
+        <input type="text" name="title" class="form-control">
+        <label for="location">Location:</label>
+        <input type="text" name="location">
+        <label for="businessHours">Business Hours:</label>
+        <input type="text" name="businessHours">
+        <label for="distance">Distance:</label>
+        <input type="text" name="distance">
+        <label for="difficultyLevel">Difficulty Level:</label>
+        <input type="text" name="difficultyLevel">
+        <input type="submit" value="Add Trail">
+
+
+
+    </form>
+
+    <%- include('../partials/footer') %>

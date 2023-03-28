@@ -1,7 +1,10 @@
 const mongoose = require('mongoose');
 
 // replace your database connection string here
-mongoose.connect(process.env.DATABASE_URL);
+mongoose.connect('mongodb://127.0.0.1/trails', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
 
 const db = mongoose.connection;
 
