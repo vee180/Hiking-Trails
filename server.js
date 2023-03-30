@@ -5,11 +5,31 @@ const express = require('express');
 const path = require('path');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
+//import near the top of the file
+const MongoStore = require('connect-mongo');
+
 // session middleware
 const session = require('express-session');
 const passport = require('passport');
 const methodOverride = require('method-override');
 const indexRoutes = require('./routes/index');
+
+
+//import near the top of the file
+
+
+// rest of code then update the middleware
+// setting up our session to use the Mongostore
+
+
+
+
+
+
+
+
+
+
 
 const indexRouter = require('./routes/index');
 const trailsRouter = require('./routes/trails');
@@ -42,7 +62,10 @@ app.set('view engine', 'ejs');
 // The point of the sessions cookie is so we can keep track of what client is making 
 // http requests to the server 
 app.use(session({
-  secret: process.env.SECRET, // <- this is accessing the variable in the .env file
+  store: MongoStore.create({
+    mongoUrl: process.env.DATABASE_URL
+  }),
+  secret: process.env.SECRET,
   resave: false,
   saveUninitialized: true
 }));
@@ -59,6 +82,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride('_method')); // <- this needs to be added for PUT And DELETE request that are in the 
 // query strings from the client http requests /?_method=DELETE
+
 
 // this custom middlware needs to be after passport!
 // =================================================
