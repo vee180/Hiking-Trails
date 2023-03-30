@@ -10,13 +10,20 @@
         <tbody>
             <% trails.forEach(function(m) { %>
                 <tr>
-                    <td>
+                    <td style="font-family: Century Gothic,
+                    CenturyGothic,
+                    AppleGothic,
+                    sans-serif;color:white ; text-shadow: green 0.1em 0.1em 0.2em ">
                         <%= m.title %>
                     </td>
-                    <td>
+                    <td style="font-family: Century Gothic,
+                    CenturyGothic,
+                    AppleGothic,
+                    sans-serif; color:white; font-weight: 700; text-shadow: green 0.1em 0.1em 0.2em">
                         <%= m.location %>
                     </td>
-                    <td><a class="details" href="/trails/<%= m._id %>">DETAILS</a></td>
+                    <td><button><a class="details" href="/trails/<%= m._id %>"
+                                style="color: goldenrod; font-size:larger;">DETAILS</a></button></td>
                 </tr>
                 <% }); %>
         </tbody>

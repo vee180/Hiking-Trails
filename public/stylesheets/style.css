@@ -1,6 +1,7 @@
 * {
   display: flexbox;
-  color: #006F46;
+  color: darkgoldenrod;
+
   background-image: url("https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/forest.jpg");
   background-size: cover;
   text-align: center;
@@ -217,13 +218,18 @@ h3 {
   bottom: 0;
   left: 25%;
   color: #DADD98;
+  text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;
   align-content: space-around;
   text-align: center;
-  font-size: large;
+  font-size: larger;
   margin: auto;
   padding: auto;
   width: 50%;
-  font-family: Copperplate, Copperplate Gothic Light, fantasy;
+  font-family: Century Gothic,
+    CenturyGothic,
+    AppleGothic,
+    sans-serif;
   font-weight: 1200;
 
 }
@@ -240,14 +246,14 @@ h3 {
 a {
   font-size: large;
   text-align: center;
-  text-decoration: double;
+
   font-family: Copperplate, Copperplate Gothic Light, fantasy;
 
 }
 
 img {
 
-  height: 300px;
+  height: 350px;
   width: 350px;
   margin: auto;
   padding: auto;
@@ -256,15 +262,15 @@ img {
 
 }
 
-blockquote {
 
-  font-size: small;
-  color: whitesmoke;
-  font-weight: 200;
-
-}
 
 h4 {
   font-size: medium;
-  font-family: Optima, sans-serif;
+  font-family: Century Gothic,
+    CenturyGothic,
+    AppleGothic,
+    sans-serif;
+  color: black;
+
+
 }

@@ -1,23 +1,26 @@
 <%- include('../partials/header') %>
 
+
     <section id="show-page">
-        <div>Title: </div>
+        <div style="color: black;font-size: larger; font-weight: 900;">
+            Title:
+        </div>
         <div>
             <%= trail.title %>
         </div>
-        <div>Location: </div>
+        <div style="color: black;font-size: larger; font-weight: 900;">Location: </div>
         <div>
             <%= trail.location %>
         </div>
-        <div>Business Hours:</div>
+        <div style="color: black;font-size: larger; font-weight: 900;">Business Hours:</div>
         <div>
             <%= trail.businessHours %>
         </div>
-        <div>Distance:</div>
+        <div style="color: black;font-size: larger; font-weight: 900;">Distance:</div>
         <div>
             <%= trail.distance %>
         </div>
-        <div>Difficulty Level:</div>
+        <div style="color: black;font-size: larger; font-weight: 900;">Difficulty Level:</div>
         <div>
             <%= trail.difficultyLevel %>
         </div>
@@ -27,8 +30,10 @@
 
 
 
-
-    <a href="/trails/<%= trail._id %>/edit" style="height: 50px;">Edit Trail</a>
+    <button style="margin-bottom: 100px; margin-top: 80px; height: 90; width: 90px; background-color: darkolivegreen;">
+        <a href="/trails/<%= trail._id %>/edit" style="height: 90px; color:antiquewhite; font-size: large;">Edit
+            Trail</a>
+    </button>
     <!-- add to cast form below this comment -->
 
 
@@ -42,20 +47,22 @@
 
 
     <br><br>
-    <h2>Reviews</h2>
+    <h2 style="color:white;">Reviews</h2>
     <% if (user) { %>
         <form id="add-review-form" method="POST" action="/trails/<%= trail._id %>/reviews">
-            <label>Review:</label>
+            <label style="color:white;">Review:</label>
             <textarea name="content"></textarea>
-            <label>Rating:</label>
-            <select name="rating">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
+            <label style="color:white;">Rating:</label>
+            <select name="rating" style="color:goldenrod;">
+                <option value="1 ">
+                    1
+                </option>
+                <option value="2"> 2 </option>
+                <option value="3">3 </option>
+                <option value="4"> 4</option>
+                <option value="5"> 5</option>
             </select>
-            <input type="submit" value="Add Review">
+            <input type="submit" value="Add Review" style="color:white;">
         </form>
         <% } else { %>
             <span>Please Login in order to leave a Review</span>
@@ -78,22 +85,23 @@
                                     <% total +=r.rating %>
                                         <tr>
                                             <td class="review-user"><img alt="avatar" src="<%= r.userAvatar %>"
-                                                    referrerpolicy="no-referrer">
+                                                    referrerpolicy="no-referrer" style="height:50px;width: 60px;">
                                                 <%= r.userName %>
                                             </td>
-                                            <td>
+                                            <td style="color:aliceblue;">
                                                 <%= r.createdAt.toLocaleDateString() %>
                                             </td>
-                                            <td>
+                                            <td style="color:aliceblue;">
                                                 <%= r.content %>
                                             </td>
-                                            <td>
+                                            <td style="color:aliceblue;">
                                                 <%= r.rating %>
                                             </td>
                                             <td>
                                                 <% if (user && user._id.equals(r.userId)) { %>
                                                     <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
-                                                        <button type="submit">Delete</button>
+                                                        <button type="submit"
+                                                            style="color:white; height: 50px; width: 90px;font-size:large">Delete</button>
                                                     </form>
                                                     <% } %>
                                             </td>
@@ -101,7 +109,7 @@
                                         <% }); %>
                                             <tr>
                                                 <td colspan="2"></td>
-                                                <td><strong>
+                                                <td style="color:aliceblue;"><strong>
                                                         <%= (total / trail.reviews.length).toFixed(1) %>
                                                     </strong></td>
                                             </tr>

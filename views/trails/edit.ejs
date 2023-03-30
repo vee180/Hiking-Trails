@@ -3,27 +3,30 @@
     <form action="/trails/<%= trail._id%>?_method=PUT" method="POST">
         <div>
             <label for="title" style="color:black;">Title:</label>
-            <input type=" text" id="title" name="title" value="<%=trail.title%>" style="height:40px ;">
+            <input type=" text" id="title" name="title" value="<%=trail.title%>" style="height:40px ; color: brown">
         </div>
         <div>
             <label for="location" style="color:black;">Location:</label>
-            <input type=" text" id="location" name="location" value="<%=trail.location%>" style="height:40px ;">
+            <input type=" text" id="location" name="location" value="<%=trail.location%>"
+                style="height:40px ; color: brown">
         </div>
         <div>
             <label for="businessHours" style="color:black ;">Business Hours:</label>
-            <input type="text" style="height:40px ;" id="businessHours" name="businessHours"
+            <input type="text" style="height:40px ; color: brown" id="businessHours" name="businessHours"
                 value="<%=trail.businessHours%>">
         </div>
         <div>
             <label for="distance" style="color:black;">Distance:</label>
-            <input type=" text" id="distance" name="distance" style="height:40px ;">
+            <input type=" text" id="distance" name="distance" style="height:40px; color: brown"
+                value="<%=trail.distance%>">
         </div>
         <div>
             <label for="difficultyLevel" style="color:black;">Difficulty Level:</label>
-            <input type=" text" id="difficultyLevel" name="difficultyLevel" style="height:40px ;">
+            <input type=" text" id="difficultyLevel" name="difficultyLevel" style="height:40px ; color: brown"
+                value="<%=trail.difficultyLevel%>">
         </div>
 
-        <button style="color:black; height: 45px; font-size: large;">Edit
+        <button style="color:white; height: 45px; font-size: large;">Edit
             Trail</button>
 
 
