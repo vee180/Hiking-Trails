@@ -9,18 +9,62 @@
 </head>
 
 <body>
+
+    <nav>
+        <nav>
+            <a href="/trails">ALL TRAILS</a>
+            <% if (user) { %>
+                <a href="/trails/new">ADD TRAIL</a>
+                <a href="/logout">LOG OUT</a>
+                <% } else { %>
+                    <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/SWJ3Ylm.png"></a>
+                    <% } %>
+        </nav>
+
+    </nav>
+
     <h1>The best hiking trails are waiting for you here!</h1>
+    <div class="container">
+        <h3>Our hiking trail app is your ultimate guide to the great outdoors. With a vast database of hiking trails
+            from
+            all
+            around the world, you can easily find the perfect trail for your next adventure. Our app includes detailed
+            information on each trail, including its difficulty level and distance . You can also read reviews from
+            other
+            hikers and view photos of the trail to help you plan your trip.
+        </h3>
+    </div>
 
-    <p>Our hiking trail app is your ultimate guide to the great outdoors. With a vast database of hiking trails from all
-        around the world, you can easily find the perfect trail for your next adventure. Our app includes detailed
-        information on each trail, including its difficulty level, distance and estimated time to
-        complete. You can also read reviews from other hikers and view photos of the trail to help you plan your trip.
-    </p>
-    <a href="/trails/new">New Trail</a>
+    <h4>Indulge in a delightful visual treat as we present a splendid gallery of photographs featuring hikers from
+        various corners of the world in action on their exhilarating treks. Each image captures the sheer joy and
+        excitement of exploring the outdoors and immersing oneself in the awe-inspiring beauty of nature. Join us on a
+        thrilling journey as we witness the incredible resilience and determination of these hiking enthusiasts through
+        these stunning snapshots.</h4>
+    <div class="pictures">
+        <img src="https://i.imgur.com/WzSUUqP.jpg">
+        <img src="https://i.imgur.com/uKKb09G.jpg">
+        <img src="https://i.imgur.com/0sgBgjP.jpg">
+        <img src="https://i.imgur.com/6F6nm65.jpg">
+
+    </div>
 
 
-    <!-- <a href=" /trails">All Trails</a> -->
+    <div class="manner">
+        <img
+            src="https://images.squarespace-cdn.com/content/v1/5c44aa445b409bd6459cef52/1584415925755-1GRV2V1XXST4N1M0AU8W/trail+manners+copy.jpg?format=1000w">
+    </div>
+    <blockquote>Here is a helpful set of manners that hikers can follow to ensure an enjoyable and respectful outdoor
+        experience</blockquote>
 
+    <!-- <a href="/trails/new">New Trail</a> -->
+
+
+
+
+
+
+    <p id="copyright">© 2023 Hiking Trails. All Rights Reserved. </p>
 </body>
+
 
 </html>

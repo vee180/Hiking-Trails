@@ -14,6 +14,7 @@ const indexRoutes = require('./routes/index');
 const indexRouter = require('./routes/index');
 const trailsRouter = require('./routes/trails');
 const reviewsRouter = require('./routes/reviews');
+const editRouter = require('./routes/');
 
 // create the Express app
 const app = express();
@@ -82,6 +83,7 @@ app.use(function (req, res, next) {
 
 app.use('/', indexRouter);
 app.use('/trails', trailsRouter);
+app.use('/', editRouter);
 
 
 
@@ -94,6 +96,11 @@ app.use('/trails', trailsRouter);
 // because none of the routes start with the same 
 // common path like `/movies`
 app.use('/', reviewsRouter);
+
+
+
+
+
 
 
 

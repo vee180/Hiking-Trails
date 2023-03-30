@@ -1,35 +1,32 @@
-# passport-boilerplate
+# Hiking Trails App
 
 
-This is your passport boilerplate.
+## Project Description
 
-## Setup 
-
-1. Clone the repo
-2. Rename the folder to your Project
-3. Delete the `.git` file, when you are in the root of the file, you can press `ls` and you should see a `.git` file, then go ahead and run `rm -rf .git`
+As someone who enjoys hiking, I have noticed that there are very few apps that provide detailed information about hiking trails, such as their distance, difficulty level, and terrain. That's why I decided to create a hiking trail web app that can cater to hikers all around the world.
+With this app, you'll have access to a plethora of hiking trails from all around the world, complete with detailed information about each one. You'll also be able to read reviews from other hikers to get a better idea of what to expect. Additionally, we've included a feature that allows hikers to add new trails to the app that may not already be listed.
 
 
-#### Setup your git repo
-0. Setup your `.env` file and add all the things you need! (look at mongoose movies for reference!)
-1. in the project root `git init`
-2. `git add .` to add all the starter code
-3. `git commit -m "setup boilerplate"` 
-4. go to github and create your github and create a repo (Without a readme or liscense you can add that later!)
-5. copy the remote address
-6. In your terminal add the remote `git remote add origin yourGithubRepo'sAddressGoesHere`
-7. `git pull origin main` If a screen pulls up asking you to do something just press `:q` and then `enter` (thats vim btw :) )
-8. `git push origin main`
+## Getting Started
 
-#### Setup your login (THE APP WON'T WORK until you do, no VIEWS are setup, or the landing route)
+In order to fully utilize our hiking trail web app, we kindly ask that you create an account and log in. This will grant you access to all the detailed information about each hiking trail, as well as the ability to add new trails to the app. Additionally, if you happen to come across any inaccuracies or outdated information, you'll be able to make changes to the trail's listing. All we require is a valid email address for your account.
 
-0. Setup your database connection string
-1. Then Setup Your User Model, 
-2. Follow the steps from the lesson plan to get your Google login credentials for your `.env` file (create the file if you haven't), or you can just copy the ones from earlier if you want to reuse them.
-3. Setup the Code in your config passport 
-4. Setup your callback routes in your `routes/index`
-5. Setup a view and test your login!
+## List of the Technologies used
+### Languages:
+ HTML
+ / CSS /
+ JAVASCRIPT
+ / Mongo /
+  EJS
 
-#### Make a commit 
+  ### Databases:
+  MongoDB
 
-```git commit -m "setup up oauth and User Model"```
+
+
+
+  ![](https://i.imgur.com/Fr7UGVf.jpg)
+  ![](https://i.imgur.com/oMwU1Ph.jpg)
+  ![](https://i.imgur.com/t0ncTKi.jpg)
+  ![](https://i.imgur.com/dUSExwS.jpg)
+  ![](https://i.imgur.com/skUQHZa.jpg)

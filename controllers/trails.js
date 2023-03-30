@@ -15,9 +15,40 @@ module.exports = {
     create,
     index,
     show,
+    update,
+    edit
 
 
 }
+
+
+
+async function update(req, res) {
+    try {
+        const updatedTrail = await TrailModel.findOneAndUpdate(
+            { _id: req.params.id },
+            // update object with updated properties
+            req.body,
+            // options object {new: true} returns updated doc
+            { new: true }
+        );
+        return res.redirect(`/trails/${updatedTrail._id}`);
+    } catch (e) {
+        console.log(e.message);
+        return res.redirect('/trails');
+    }
+}
+
+
+
+async function edit(req, res) {
+    const trail = await TrailModel.findOne({ _id: req.params.id });
+    if (!trail) return res.redirect('/trails');
+    res.render('trails/edit', { trail });
+}
+
+
+
 
 
 function show(req, res) {

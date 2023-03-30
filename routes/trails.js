@@ -7,7 +7,10 @@ const isLoggedIn = require('../config/auth')
 router.get('/', trailsCtrl.index);
 router.get('/new', trailsCtrl.new);
 router.get('/:id', trailsCtrl.show);
+router.get('/:id/edit', trailsCtrl.edit);
 router.post('/', isLoggedIn, trailsCtrl.create);
+router.put('/:id', trailsCtrl.update);
+
 // check if the user is logged before they create a movie! Server side authorization!
 
 module.exports = router;

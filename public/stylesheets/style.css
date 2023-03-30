@@ -1,13 +1,13 @@
 * {
-  box-sizing: border-box;
-  font-family: Impact, fantasy;
-  color: black;
-  background-image: url("https://cdn.pixabay.com/photo/2017/12/30/07/13/mountain-climbing-3049433_1280.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+  display: flexbox;
+  color: #006F46;
+  background-image: url("https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/forest.jpg");
+  background-size: cover;
   text-align: center;
   background-attachment: fixed;
-  background-position: right;
+  background-position: center;
+  font-family: Copperplate, Copperplate Gothic Light, fantasy;
+
 
 
 
@@ -15,27 +15,30 @@
 }
 
 body {
-
-  margin: 0;
+  margin: auto;
+  padding: auto;
   height: 100vh;
   display: grid;
-  grid-template-rows: 50px 1fr;
+  grid-template-rows: 120px 2fr;
   grid-template-areas:
     "nav"
     "main"
 }
 
 body>nav {
+
   grid-area: nav;
   background-color: #B8C0C2;
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  justify-content: right;
+
+
   align-items: center;
   padding: 0 20px 0 30px;
 }
 
 nav>img {
-  width: 34px;
+  width: 30px;
   object-fit: contain;
   margin-right: auto;
 }
@@ -45,7 +48,6 @@ body>main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #E8ECEB;
   padding: 20px;
   overflow-y: scroll;
 }
@@ -58,11 +60,11 @@ nav>a {
   margin: 20px;
   text-decoration: none;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 nav>a:hover {
-  color: white;
+  color: black;
   background-color: #424748;
 }
 
@@ -90,17 +92,27 @@ nav>a.active {
 }
 
 table {
-  font-size: 20px;
+  font-size: 40px;
+
 }
 
 table thead th {
-  padding: 5px;
-  border-bottom: 2px solid #424748;
+  padding: 7px;
+  border-bottom: 10px solid;
+  color: gray;
 }
 
 table td {
   padding: 10px;
   text-align: center;
+  color: lawngreen;
+  font-weight: 400;
+  font-size: medium;
+  font-family: Century Gothic,
+    CenturyGothic,
+    AppleGothic,
+    sans-serif;
+
 }
 
 #list td:nth-child(2),
@@ -117,7 +129,7 @@ table td {
 }
 
 #list a:hover {
-  background-color: white;
+  background-color: black;
 }
 
 #show-page {
@@ -134,6 +146,7 @@ table td {
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 1rem;
+
 }
 
 #add-review-form input[type="submit"] {
@@ -162,12 +175,14 @@ li {
 
 .login img {
   height: 30px;
+  width: 30px;
 }
 
 .review-user {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .review-user img {
@@ -180,22 +195,76 @@ h1 {
   height: 200vh;
   text-transform: capitalize;
   text-align: left;
-  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  font-size: 20px;
-}
-
-p {
-  text-align: left;
-  text-shadow: #424748;
-  font-size: small;
-  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-
-}
-
-a {
   font-family: Century Gothic,
     CenturyGothic,
     AppleGothic,
     sans-serif;
-  text-align: left;
+
+
+  font-weight: 900;
+  margin: auto;
+  font-size: 30px;
+  color: #424748;
+  padding: auto;
+  display: inline-flexbox;
+
+}
+
+
+h3 {
+  position: absolute;
+  top: 2;
+  bottom: 0;
+  left: 25%;
+  color: #DADD98;
+  align-content: space-around;
+  text-align: center;
+  font-size: large;
+  margin: auto;
+  padding: auto;
+  width: 50%;
+  font-family: Copperplate, Copperplate Gothic Light, fantasy;
+  font-weight: 1200;
+
+}
+
+.pictures {
+  position: relative;
+  margin-bottom: 400px;
+  margin-top: auto;
+  padding: auto;
+  top: 0;
+
+}
+
+a {
+  font-size: large;
+  text-align: center;
+  text-decoration: double;
+  font-family: Copperplate, Copperplate Gothic Light, fantasy;
+
+}
+
+img {
+
+  height: 300px;
+  width: 350px;
+  margin: auto;
+  padding: auto;
+
+
+
+}
+
+blockquote {
+
+  font-size: small;
+  color: whitesmoke;
+  font-weight: 200;
+
+}
+
+h4 {
+  font-size: medium;
+  font-family: Optima, sans-serif;
 }
