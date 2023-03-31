@@ -39,7 +39,7 @@ const trailSchema = new mongoose.Schema(
 
 
     },
-    // db.trails.insertOne({ name: "Trail 1", location: "New York", businessHours: "9am-10pm", reviews: [] })
+    
 
 
 );

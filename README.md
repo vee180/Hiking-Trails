@@ -13,15 +13,15 @@ In order to fully utilize our hiking trail web app, we kindly ask that you creat
 
 ## List of the Technologies used
 
-### Languages:
+
  HTML
  / CSS /
  JAVASCRIPT
  / Mongo /
-  EJS
-
-  ### Databases:
   MongoDB
+/ Express /
+  Node.JS
+
 
 
 ## Future Enhancements
@@ -41,4 +41,4 @@ My next goal for this web app is to incorporate a map feature, which will allow 
 
 
 
- ###### link: 
+ ###### link: https://adorable-erin-sparrow.cyclic.app
