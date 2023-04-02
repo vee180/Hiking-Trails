@@ -11,6 +11,6 @@ router.get('/:id/edit', trailsCtrl.edit);
 router.post('/', isLoggedIn, trailsCtrl.create);
 router.put('/:id', trailsCtrl.update);
 
-// check if the user is logged before they create a movie! Server side authorization!
+
 
 module.exports = router;
