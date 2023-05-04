@@ -28,9 +28,6 @@ const editRouter = require("./routes/");
 const app = express();
 
 // connect to the MongoDB with mongoose
-require("./config/database");
-// configure Passport
-require("./config/passport");
 
 // require database file
 // this will create a connection
