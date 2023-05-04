@@ -22,7 +22,6 @@ const indexRoutes = require("./routes/index");
 const indexRouter = require("./routes/index");
 const trailsRouter = require("./routes/trails");
 const reviewsRouter = require("./routes/reviews");
-const editRouter = require("./routes/");
 
 // create the Express app
 const app = express();
@@ -89,7 +88,7 @@ app.use(function (req, res, next) {
 
 app.use("/", indexRouter);
 app.use("/trails", trailsRouter);
-app.use("/", editRouter);
+
 
 // Embedded Resources (Reviews)
 // One to many relationship
